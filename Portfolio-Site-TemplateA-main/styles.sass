@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+// C O L O R S 
+
+$coffee: #cdaea8
+$light-coffee: #f2eae8
+$dark-coffee: #8b5a50
+$light-gray: #ececec
+$blk: #5a5a5a
+
+
+html
+    scroll-behavior: smooth
+
+h1 
+    font-family: Satisfy
+    font-size: 50px
+
+h2
+    color: $dark-coffee
+
+h3 
+    color: $dark-coffee
+    border-bottom: 2px dotted $dark-coffee
+    padding-bottom: 10px
+    margin-bottom: 3rem
+    width: fit-content
+    
+p 
+    color: $blk
+
+a 
+    color: $dark-coffee
+    text-decoration: none
+    &:hover
+        color: $blk
+        text-decoration: none
+      
+button
+    background: #ffffff
+    color: $dark-coffee
+    padding: 10px 20px
+    border: 1px solid $dark-coffee
+    text-transform: uppercase
+    font-size: 13px
+    &:hover
+        color: $blk
+        border: 1px solid $blk
+
+.nav
+    background: #ffffff
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2)
+    a 
+        text-decoration: none
+        color: $blk
+        padding: 10px 0px 10px 20px   
+        font-size: 12px
+        text-transform: uppercase
+        transition: background .25s
+        &:hover
+            background: $light-coffee
+           
+.navicon
+    background: $dark-coffee
+
+.navbar-nav a
+    color: $blk !important
+
+.name-logo 
+    font-size: 22px
+
+// .selfie 
+//     background-image: url(img/selfie.jpeg)
+//     background-position: 50% 56%
+//     background-size: cover
+
+
+.selfie
+    background-image: url(img/selfie.jpeg)
+    background-position: 50% 60%
+    height: 550px
+    background-size: cover
+
+.dev-info
+    padding: 3rem 2rem;
+
+.about
+    background: $light-gray
+    padding: 3rem 0rem;
+    ul
+        list-style-type: none
+        padding-left: 0px;
+        li
+            background: url('img/checkmark.png') no-repeat left top
+            background-size: 20px
+            height: 50px
+            padding-left: 25px
+            font-weight: bold
+
+.contact
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px
+    background: $light-coffee
+    padding: 1rem 0rem
+    a
+        display: inline-block
+
+
+.work
+    padding: 3rem 0rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2)
+    p
+        border-left: 5px solid $light-gray
+        padding-left: 10px
+        font-size: 12px
+    img 
+            max-width: 100%
+    h6 a 
+        color: $blk
+
+// M E D I A   Q U E R Y 
+
+@media only screen and (max-width: 767.25px) 
+    .dev-info
+        padding: 3rem 1rem !important
+
+
